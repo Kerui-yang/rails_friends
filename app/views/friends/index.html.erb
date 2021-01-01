@@ -1,5 +1,7 @@
+<%= @friends.count %>
 
 <% if user_signed_in? %>
+
   <% if @friends.count > 0 %>
   <table class="table table-striped table-bordered table-hover">
     <thead class="table-dark">
