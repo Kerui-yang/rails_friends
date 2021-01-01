@@ -16,7 +16,7 @@
 
     <tbody>
       <% @friends.each do |friend| %>
-        <% if friend.user == current_user %>
+
         <tr>
           <td>
             <%= link_to friend.first_name + '   ' + friend.last_name, friend %>
@@ -28,7 +28,7 @@
           <td><%= friend.twitter %></td>
           <td><%= link_to 'Delete', friend, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-outline-danger btn-sm' %></td>
         </tr>
-        <% end %>
+
       <% end %>
     </tbody>
   </table>

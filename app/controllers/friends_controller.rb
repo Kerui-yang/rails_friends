@@ -5,7 +5,7 @@ class FriendsController < ApplicationController
   # GET /friends
   # GET /friends.json
   def index
-    @friends = Friend.all
+    @friends = Friend.where(user: current_user)
   end
 
   # GET /friends/1
